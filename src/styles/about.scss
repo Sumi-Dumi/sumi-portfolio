@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "bungee";
+    src: url(../fonts/Bungee-Regular.ttf);
+}
+@font-face {
+    font-family: "inter_regular";
+    src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: "inter_light";
+    src: url(../fonts/Inter-Light.ttf);
+}
+@font-face {
+    font-family: "bayon";
+    src: url(../fonts/Bayon-Regular.ttf);
+}
+@import "_variables.scss";
+@import "_mixins.scss";
+
+
+.About{
+    margin-top: 100px;
+    background-color: $pink;
+    width: 100%;
+    height: 44vw;
+    padding:  7% 8% 30% 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+.number{
+    font-family: "inter_regular";
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    .numberWrapper{
+        width: 19vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .numberCircle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 13vw;
+            height: 13vw;
+            border-radius: 50%;
+            margin: 5% 5% 5% 5%;
+            h1{
+                font-size: 2.5vw;
+            }
+            h3{
+                font-size: 1.8vw;
+            }
+            
+        }
+        .blue{
+            background-color: $blue;
+            color: $pink;
+        }
+        .pink{
+            background-color: $pink;
+            border: 1px solid $blue;
+            color: $blue;
+        }
+        .numberDes{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: $blue;
+            line-height: 1.3;
+            font-size: 1.7vw;
+        }
+    }
+
+
+}
+
+.stat{
+    margin-bottom: 8%;
+    grid-column: 2;
+    grid-row:1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    div{
+        display: flex;
+        div{
+            display: block;
+        }
+    }
+
+    h1{
+        color: transparent;
+        -webkit-text-stroke: 1.2px $blue;
+        font-family: "bungee";
+        font-size: $aboutfontnumber;
+    }
+}
+.lineWrapper{
+    display: block;
+    width: 50px;
+    margin-left: 10px;
+    .firstline{
+        border-bottom: 1px solid $blue;
+    }
+    div{
+        height: calc($aboutfontnumber / 2);
+        width: 50px;
+        
+    }
+}
+
+.underbar{
+    margin-top: 8%;
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+.aboutText{
+
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    div{
+        font-family: "bungee";
+        font-size: 6vw;
+        color: $blue;
+    }
+    div::before{
+        display: block;
+        content: "ABOUT ME";
+        color: transparent;
+        -webkit-text-stroke: 1.2px $blue;
+    }
+    p{
+        text-align: end;
+        font-family: "inter_light";
+        color: $blue;
+        margin-top: 1vh;
+        font-size: 2vw;
+        line-height: 1.2;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .number{
+        justify-content: flex-end;
+        font-family: "inter_regular";
+        grid-column: 1;
+        grid-row: 3;
+        .numberWrapper{
+            width: 24vw;
+            .numberCircle{
+                width: 18vw;
+                height: 18vw;
+                h1{
+                    font-size: 3.5vw;
+                }
+                h3{
+                    font-size: 2.5vw;
+                }
+            }
+            .numberDes{
+                font-size: 2.5vw;
+            }
+        }
+        
+    }
+    .lineWrapper{
+        div{
+            height: calc($aboutfontnumber2 / 2);
+            
+        }
+    }
+
+
+    .About{
+        height: 110vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 8fr 5fr 1fr;
+    }
+    .stat{
+        margin-top: 10%;
+        margin-bottom: 8%;
+        grid-column: 1;
+        grid-row:1;
+        h1{
+            font-size: $aboutfontnumber2;
+        }
+    }
+
+    .aboutText{
+        div{
+            font-size: 11vw;
+        }
+        p{
+            font-size: 3vw;
+            margin-bottom: 2vh;
+        }
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .underbar{
+        margin-top: 8%;
+        grid-column: 1;
+        grid-row: 4;
+    }
+}
+
+
+
