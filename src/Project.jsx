@@ -35,6 +35,7 @@ import instaIcon from './img/instagram.png';
 import html from './img/html.png';
 import scss from './img/scss.png';
 import shortarrow from './img/shortarrow.png';
+import portfolio from "./download/sumi_han_portfolio.pdf";
 
 
 function Project(){
@@ -323,6 +324,9 @@ function Project(){
                     </div>
 
                 </div>
+                <div className="projectTags tagMargin">
+                    <a className="projectTag" target="_blank" href="https://github.com/Sumi-Dumi/sumi-portfolio">Git Hub</a>
+                </div>
                 
                 
 
@@ -426,6 +430,9 @@ function Project(){
                     {cdProject === "sm" && category === "coding" && <SmDes></SmDes>}
                 </div>
             </div>
+            <a href={portfolio} className="downloadPortfolio"download="Sumi-Han-Portfolio.pdf">
+                FULL PORTFOLIO DOWNLOAD
+            </a>  
             
         </div>
     )

@@ -8,6 +8,7 @@ import githubIcon from './img/github.png'
 import linkedinIcon from './img/linkedin.png'
 import About from './About'
 import Project from './Project'
+import Footer from './Footer'
 
 function Main({order, des1, des2, tag1, tag2, tag3, tag4, tag5, tag6}){
   return(
@@ -138,6 +139,7 @@ function App() {
         </div>
         <About></About>
         <Project></Project>
+        <Footer></Footer>
       </div>
       
       <div className="social">

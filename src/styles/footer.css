@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "bungee";
+  src: url(../fonts/Bungee-Regular.ttf);
+}
+@font-face {
+  font-family: "inter_regular";
+  src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "inter_light";
+  src: url(../fonts/Inter-Light.ttf);
+}
+@font-face {
+  font-family: "bayon";
+  src: url(../fonts/Bayon-Regular.ttf);
+}
+@font-face {
+  font-family: "inter_black";
+  src: url(../fonts/Inter-Black.ttf);
+}
+@font-face {
+  font-family: "inter_regular";
+  src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "inter_light";
+  src: url(../fonts/Inter-Light.ttf);
+}
+.footer {
+  background-color: #FFBBBF;
+  color: #0D293E;
+  height: 10vw;
+  font-family: "inter_regular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 2.5vw;
+  }
+}/*# sourceMappingURL=Footer.css.map */

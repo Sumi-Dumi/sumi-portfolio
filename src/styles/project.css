@@ -88,7 +88,7 @@
 .projectSection {
   display: grid;
   width: 100%;
-  margin-bottom: 30vh;
+  margin-bottom: 2vh;
   grid-template-columns: 1fr 1fr;
 }
 .projectSection .photoGallary {
@@ -326,7 +326,32 @@
   line-height: 1.5;
 }
 
+.downloadPortfolio {
+  width: 33vw;
+  height: 4vh;
+  font-family: "inter_regular";
+  background-color: #FFBBBF;
+  margin-bottom: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0D293E;
+  font-size: 1.8vw;
+}
+
 @media (max-width: 767px) {
+  .downloadPortfolio {
+    width: 45vw;
+    height: 4vh;
+    font-family: "inter_regular";
+    background-color: #FFBBBF;
+    margin-bottom: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0D293E;
+    font-size: 2.5vw;
+  }
   .project {
     margin-top: 15%;
   }
@@ -494,7 +519,7 @@
   .projectSection {
     display: grid;
     width: 100%;
-    margin-bottom: 30vh;
+    margin-bottom: 7vh;
     grid-template-columns: 1fr;
   }
   .projectSection .photoGallary {
