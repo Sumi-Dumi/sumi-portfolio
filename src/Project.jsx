@@ -31,11 +31,9 @@ import sw3 from './img/sw3.png';
 import sw4 from './img/sw4.png';
 import sw5 from './img/sw5.png';
 import reacticon from './img/reacticon.png';
-import instaIcon from './img/instagram.png';
 import html from './img/html.png';
 import scss from './img/scss.png';
 import shortarrow from './img/shortarrow.png';
-import portfolio from "./download/sumi_han_portfolio.pdf";
 
 
 function Project(){
@@ -430,7 +428,7 @@ function Project(){
                     {cdProject === "sm" && category === "coding" && <SmDes></SmDes>}
                 </div>
             </div>
-            <a href={portfolio} className="downloadPortfolio"download="Sumi-Han-Portfolio.pdf">
+            <a href="https://drive.google.com/file/d/1MorSfsIZG7A7JjEqjMmUWW-9p3Jkuj3J/view" className="downloadPortfolio">
                 FULL PORTFOLIO DOWNLOAD
             </a>  
             
